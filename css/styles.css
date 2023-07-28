@@ -1019,3 +1019,14 @@ footer a {
 footer img {
     width: 20px;
 }
+
+
+/* TEST CODE */
+
+.test-section {
+    flex-direction: column;
+}
+
+.test-section .test-item {
+    display: none;
+}
