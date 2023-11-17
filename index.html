@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=0">
     <title>Mark Iacovone (MAI) - Music Producer and Composer</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <!-- <audio id="audio1" src="./assets/audio/chill/Follow Me.mp3"></audio> -->
-    <!-- <audio id="audio2" src="./assets/audio/chill/Innocent Steps.mp3"></audio> -->
-    <button id="prevBtn">Prev</button>
-    <button id="playBtn">Play</button>
-    <button id="nextBtn">Next</button>
     
     <section class="intro dark" id="intro">
         <div class="left-div">
@@ -35,9 +32,9 @@
                 <hr>
                 <h4 class="aka">MAI</h4>
             </div>
-            <div class="arrow-ctn">
-                <img src="./assets/bottom-sign.webp" alt="">
-            </div>
+            <button class="arrow-ctn">
+                <a href="#about"><img src="./assets/bottom-sign.webp" alt=""></a>
+            </button>
         </div>
 
         <!-- RIGHT DIV - 3D BG -->
@@ -45,10 +42,23 @@
             <img src="./assets/music-note.webp" alt="3d music note floating icon.">
         </div>
 
+        <div class="tags-slider-bg">
+            <ul>
+                <li><h4>Musician / Producer / Singer / Composer / Guitarist / Musician / Producer / Singer / Composer / Guitarist / </h4></li>
+                <li><h4>Producer / Singer / Composer / Guitarist / Musician / Producer / Singer / Composer / Guitarist / Musician / </h4></li>
+                <li><h4>Singer / Composer / Guitarist / Musician / Producer / Singer / Composer / Guitarist / Musician / Producer / </h4></li>
+                <li><h4>Composer / Guitarist / Musician / Producer / Singer / Composer / Guitarist / Musician / Producer / Singer / </h4></li>
+                <li><h4>Guitarist / Musician / Producer / Singer / Composer / Guitarist / Musician / Producer / Singer / Composer / </h4></li>
+            </ul>
+        </div>
+
+        <div class="halftone-dots-bg"></div>
+
         <!-- DIV - HERE GOES TEXT MOVING BG -->
     </section>
 
     <section class="about" id="about">
+        <nav id="stickyNav"><h2>ABOUT ME</h2></nav>
         <div class="left-div about-txt">
             <hr>
             <p>Born and raised on October 12th of 1996 in La Plata, Argentina, I've played and created music 
@@ -62,30 +72,31 @@
             <hr>
         </div>
         <div class="right-div card-img-ctn">
-            <img src="./assets/mark-profile-pic.webp" alt="Mark's portrait taken by the talented photographer and web developer Fermin Vazquez">
+            <img src="./assets/mark-profile-pic.webp" alt="Mark's portrait taken by the talented photographer and web developer Fermin Vazquez.">
         </div>
     </section>
-
-    <section class="test-section"></section>
     
     <section class="works dark" id="works">
+        <nav id="stickyNav"><h2>MY WORKS</h2></nav>
+        <div class="genre-nav"></div>
+        <div class="player-outer-ctn">
         <div class="left-div track-txt-ctn">
             <div class="track-txt">
-                <h2>Ambient</h2>
-                <hr>
+                <div class="title-ctn">
+                    <h2 class="genre-title"></h2>
+                    <hr>
+                </div>
                 <div class="style-description">
-                    <p>Beautiful and atmospheric, designed to create a sense of
-                        adventure, mystery, calmness and hope.
-                    </p>
+                    <p class="description"></p>
                 </div>
             </div>
-            <img class="track-style-bg" src="./assets/audio/ambient.webp" alt="background for ambient music">
+            <!-- <img class="track-style-bg" src="./assets/audio/ambient.webp" alt="background for ambient music"> -->
             <div class="track-style-box skew"></div>
             <div class="track-style-box-bg skew"></div>
         </div>
         <div class="right-div track-player-ctn">
             <ul class="track-list skew">
-                <li class="track">
+                <!-- <li class="track">
                     <h3>Fallen Angel</h3>
                     <hr class="track-title-underline">
                     <div class="player">
@@ -102,8 +113,10 @@
                     </div>
                     <div class="music-graph"></div>
                 </li>
-                <hr class="connector">
-                <li class="track unselected">
+                <hr class="connector"> -->
+
+                
+                <!-- <li class="track unselected">
                     <h3>New Flavors</h3>
                     <hr class="track-title-underline">
                     <div class="player">
@@ -155,13 +168,15 @@
                         <button id="pause"></button>
                     </div>
                     <div class="music-graph"></div>
-                </li>
-                <div class="track-list-end"></div>
+                </li> -->
+                <!-- <div class="track-list-end"></div> -->
             </ul>
+        </div>
         </div>
     </section>
     
     <section class="showcase dark" id="showcase">
+        <nav id="stickyNav"><h2>SHOWCASE</h2></nav>
         <div class="first-ctn">
             <div class="left-div">
                <a target="_blank" href="https://www.youtube.com/@MAIMusic"><img width="245" height="auto" src="./assets/yt-logo-color.webp" alt="Youtube logo"></a>
@@ -183,6 +198,7 @@
     </section>
     
     <section class="collabs" id="collabs">
+        <nav id="stickyNav"><h2>COLLABS</h2></nav>
         <div class="card-ctn">
             <div class="left-div card-img-ctn rotated"><img src="./assets/card-1.webp" alt="Picture of Dan Lambert"></div>
             <div class="right-div card-txt-ctn">
@@ -232,6 +248,7 @@
     </section>
     
     <section class="contact dark" id="contact">
+        <nav id="stickyNav"><h2>CONTACT</h2></nav>
         <form class="skew" action="" method="get" id="form">
             <div class="div-1">
                 <div class="input-ctn">
@@ -255,23 +272,23 @@
         <div class="footer-ctn">
             <div class="left-div">
                 <ul class="icon-ctn">
-                    <li>
+                    <li class="fb-logo">
                         <a href=""><img src="./assets/fb-logo.webp" alt="Facebook logo"></a>
                     </li>
 
-                    <li>
+                    <li class="ig-logo">
                         <a href=""><img src="./assets/instagram-logo.webp" alt="Instagram logo"></a>
                     </li>
 
-                    <li>
+                    <li class="yt-logo">
                         <a href=""><img src="./assets/yt-logo.webp" alt="Youtube logo"></a>
                     </li>
-
-                    <li>
+                    <div class="break"></div>
+                    <li class="p5-logo">
                         <a href=""><img src="./assets/pond5-logo.webp" alt="Pond5 logo"></a>
                     </li>
 
-                    <li>
+                    <li class="sc-logo">
                         <a href=""><img src="./assets/soundcloud-logo.webp" alt="Soundcloud logo"></a>
                     </li>
                 </ul>
@@ -307,7 +324,16 @@
         </div>
     </footer>
 
-    
-    <script src="./js/index2.js"></script>
+    <script src="./js/unpkg.com_flickity@2.3.0_dist_flickity.pkgd.min.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.153/build/three.module.js", 
+                "three/addons/": "https://unpkg.com/three@0.153/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="./js/index3.js"></script>
+
 </body>
 </html>
